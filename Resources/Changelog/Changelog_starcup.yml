@@ -1601,3 +1601,12 @@
   id: 8249
   time: '2025-10-21T06:44:23.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/522
+- author: little-meow-meow
+  changes:
+  - message: 'New font: Bitcount, a dot matrix-style font.'
+    type: Add
+  - message: 'New font: Playwrite, a cursive-style handwriting font.'
+    type: Add
+  id: 8250
+  time: '2025-10-21T08:15:36.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/525
