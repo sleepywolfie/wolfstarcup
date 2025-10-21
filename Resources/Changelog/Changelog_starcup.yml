@@ -1618,3 +1618,11 @@
   id: 8251
   time: '2025-10-21T08:43:56.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/527
+- author: Oxdeception
+  changes:
+  - message: You can now use the `[mono]`, `[font]`, and `[emoji]` rich text tags
+      to spice up your character records.
+    type: Add
+  id: 8252
+  time: '2025-10-21T15:56:06.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/530
