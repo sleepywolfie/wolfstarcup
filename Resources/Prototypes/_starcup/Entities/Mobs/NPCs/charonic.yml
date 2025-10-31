@@ -90,6 +90,7 @@
 - type: entity
   name: glowing object
   id: MobCharonicWisp
+  suffix: AI
   parent:
   - BaseSimpleMob
   - FlyingMobBase
@@ -178,3 +179,65 @@
       tags:
       - DoorBumpOpener
       - CannotSuicide
+
+- type: entity
+  name: ink-black sludge
+  id: MobCharonicSlime
+  suffix: AI
+  parent: ReagentSlimeMuteToxin
+  description: It oozes like tar and drips like a slavering maw.
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _starcup/Mobs/Aliens/alt_reagent_slime.rsi
+      layers:
+        - map: [ "enum.DamageStateVisualLayers.Base" ]
+          state: alive
+          color: "#1f2e2c"
+    - type: Damageable
+      damageContainer: Inorganic # to make it immune to caustic/radiation
+      damageModifierSet: Slime
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 3
+          Caustic: 5
+
+- type: entity
+  id: MobSpawnCharonicSlime
+  name: ink-black sludge
+  suffix: Spawner
+  categories: [ Spawner ]
+  components:
+    - type: Transform
+      anchored: True
+    - type: InteractionOutline
+    - type: Physics
+      bodyType: Static
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _starcup/Mobs/Aliens/alt_reagent_slime.rsi
+      state: spawn
+      color: "#1f2e2c"
+    - type: Fixtures
+      fixtures:
+        portalFixture:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.3
+          density: 80
+          mask:
+            - MobMask
+          layer:
+            - MobLayer
+    - type: TriggerOnSpawn
+    - type: EmitSoundOnTrigger
+      sound:
+        path: /Audio/_starcup/Effects/Fluids/emerge.ogg
+        params:
+          pitch: 0.92
+          volume: 0.75
+    - type: TimedDespawn
+      lifetime: 2.1
+    - type: SpawnOnDespawn
+      prototype: MobCharonicSlime
