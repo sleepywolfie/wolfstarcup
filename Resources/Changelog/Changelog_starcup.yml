@@ -1727,3 +1727,10 @@
   id: 8264
   time: '2025-10-30T22:51:27.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/546
+- author: little-meow-meow
+  changes:
+  - message: Catwalks can now be built over lava, water, and any 'subfloor' tile.
+    type: Tweak
+  id: 8265
+  time: '2025-11-03T06:01:52.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/559
