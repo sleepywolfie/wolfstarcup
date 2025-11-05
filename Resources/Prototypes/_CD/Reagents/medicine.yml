@@ -33,7 +33,7 @@
         - !type:ReagentCondition # makes you vomit if you OD
           reagent: Stubantazine
           min: 14
-      - !type:ChemVomit
+      - !type:Vomit
         probability: 0.8
         conditions:
           - !type:ReagentCondition # alcohol causes vomiting
