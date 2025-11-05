@@ -6,7 +6,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+    sprite: Objects/Misc/id_cards.rsi
   - type: Clothing
     slots:
     - idcard
@@ -36,7 +36,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - sprite: &icon-rsi Interface/Misc/job_icons.rsi
       offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
       state: Passenger
@@ -52,14 +53,15 @@
   components:
   - type: Sprite
     layers:
-    - state: gold
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: gold
     - state: stripe_top
-      color: "#1b67a5"
+      color: "#95004a" # starcup: syndicate rebranding
     - state: stripe_bottom
-      color: "#0e4069"
-    - sprite: *icon-rsi
+      color: "#5f002f" # starcup: syndicate rebranding
+    - sprite: _starcup/Interface/Misc/job_icons.rsi # starcup: syndicate rebranding
       offset: *icon-offset
-      state: Captain
+      state: CaptainSyndi # starcup: syndicate rebranding
   - type: Item
     heldPrefix: gold
   - type: PresetIdCard
@@ -80,14 +82,15 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: silver
     - state: stripe_top
       color: &color-service-top "#639137"
     - state: stripe_bottom
       color: &color-service-bottom "#446326"
-    - sprite: *icon-rsi
+    - sprite: _starcup/Interface/Misc/job_icons.rsi # starcup: syndicate rebranding
       offset: *icon-offset
-      state: HeadOfPersonnel
+      state: HeadOfPersonnelSyndi # starcup: syndicate rebranding
   - type: Item
     heldPrefix: silver
   - type: PresetIdCard
@@ -100,14 +103,15 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: silver
     - state: stripe_top
       color: &color-engineering-top "#ffa62b"
     - state: stripe_bottom
       color: &color-engineering-bottom "#bc5b00"
-    - sprite: *icon-rsi
+    - sprite: _starcup/Interface/Misc/job_icons.rsi # starcup: syndicate rebranding
       offset: *icon-offset
-      state: ChiefEngineer
+      state: ChiefEngineerSyndi # starcup: syndicate rebranding
   - type: Item
     heldPrefix: silver
   - type: PresetIdCard
@@ -120,14 +124,15 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: silver
     - state: stripe_top
       color: &color-medical-top "#68aed6"
     - state: stripe_bottom
       color: &color-medical-bottom "#325f7a"
-    - sprite: *icon-rsi
+    - sprite: _starcup/Interface/Misc/job_icons.rsi # starcup: syndicate rebranding
       offset: *icon-offset
-      state: ChiefMedicalOfficer
+      state: ChiefMedicalOfficerSyndi # starcup: syndicate rebranding
   - type: Item
     heldPrefix: silver
   - type: PresetIdCard
@@ -140,14 +145,15 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: silver
     - state: stripe_top
       color: &color-science-top "#a53aaa"
     - state: stripe_bottom
       color: &color-science-bottom "#652368"
-    - sprite: *icon-rsi
+    - sprite: _starcup/Interface/Misc/job_icons.rsi # starcup: syndicate rebranding
       offset: *icon-offset
-      state: ResearchDirector
+      state: ResearchDirectorSyndi # starcup: syndicate rebranding
   - type: Item
     heldPrefix: silver
   - type: PresetIdCard
@@ -160,14 +166,15 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: silver
     - state: stripe_top
       color: &color-security-top "#cb0000"
     - state: stripe_bottom
       color: &color-security-bottom "#830000"
-    - sprite: *icon-rsi
+    - sprite: _starcup/Interface/Misc/job_icons.rsi # starcup: syndicate rebranding
       offset: *icon-offset
-      state: HeadOfSecurity
+      state: HeadOfSecuritySyndi # starcup: syndicate rebranding
   - type: Item
     heldPrefix: silver
   - type: PresetIdCard
@@ -180,14 +187,15 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: silver
     - state: stripe_top
       color: &color-supply-top "#b18644"
     - state: stripe_bottom
       color: &color-supply-bottom "#5b4523"
-    - sprite: *icon-rsi
+    - sprite: _starcup/Interface/Misc/job_icons.rsi # starcup: syndicate rebranding
       offset: *icon-offset
-      state: QuarterMaster
+      state: QuarterMasterSyndi # starcup: syndicate rebranding
   - type: Item
     heldPrefix: silver
   - type: PresetIdCard
@@ -202,7 +210,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-engineering-top
     - state: stripe_bottom
@@ -220,7 +229,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-engineering-top
     - state: stripe_bottom
@@ -238,7 +248,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-engineering-top
     - state: stripe_bottom
@@ -256,7 +267,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-engineering-top
     - state: stripe_bottom
@@ -274,7 +286,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-medical-top
     - state: stripe_bottom
@@ -292,7 +305,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-medical-top
     - state: stripe_bottom
@@ -310,7 +324,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-medical-top
     - state: stripe_bottom
@@ -328,7 +343,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-medical-top
     - state: stripe_bottom
@@ -346,7 +362,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-medical-top
     - state: stripe_bottom
@@ -364,7 +381,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-medical-top
     - state: stripe_bottom
@@ -382,7 +400,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-science-top
     - state: stripe_bottom
@@ -400,7 +419,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-science-top
     - state: stripe_bottom
@@ -418,7 +438,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-science-top
     - state: stripe_bottom
@@ -436,7 +457,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-security-top
     - state: stripe_bottom
@@ -454,7 +476,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-security-top
     - state: stripe_bottom
@@ -472,7 +495,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-security-top
     - state: stripe_bottom
@@ -490,7 +514,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-security-top
     - state: stripe_bottom
@@ -508,7 +533,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-security-top
     - state: stripe_bottom
@@ -524,7 +550,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-security-top
     - state: stripe_bottom
@@ -542,7 +569,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -560,7 +588,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_clown
     - sprite: *icon-rsi
       offset: *icon-offset
@@ -575,7 +604,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: "#2d2d2d"
     - state: stripe_bottom
@@ -593,7 +623,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: "#6f56b8"
     - state: stripe_bottom
@@ -611,7 +642,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -629,7 +661,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -647,7 +680,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -665,7 +699,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -687,7 +722,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -705,7 +741,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -723,7 +760,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -741,7 +779,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -759,7 +798,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -777,7 +817,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -795,7 +836,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-service-top
     - state: stripe_bottom
@@ -815,7 +857,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-supply-top
     - state: stripe_bottom
@@ -833,7 +876,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: default
     - state: stripe_top
       color: *color-supply-top
     - state: stripe_bottom
@@ -854,7 +898,8 @@
   components:
   - type: Sprite
     layers:
-    - state: orange
+    - sprite: _starcup/Objects/Misc/id_cards.rsi # starcup: syndicate rebranding
+      state: orange
     - sprite: *icon-rsi
       offset: *icon-offset
       state: Prisoner
