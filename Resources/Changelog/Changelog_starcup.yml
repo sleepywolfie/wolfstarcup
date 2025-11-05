@@ -1755,3 +1755,11 @@
   id: 8267
   time: '2025-11-04T13:32:21.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/560
+- author: Oxdeception
+  changes:
+  - message: The wire brush can now be used to scrub the dirt off tiles. This has
+      caused the space cleaner stocks to plummet.
+    type: Add
+  id: 8268
+  time: '2025-11-05T13:35:10.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/547
