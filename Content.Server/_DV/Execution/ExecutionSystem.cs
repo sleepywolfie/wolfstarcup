@@ -15,6 +15,7 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
 using Content.Shared.Verbs;
+using Content.Shared.Weapons.Hitscan.Components;
 using Content.Shared.Weapons.Ranged;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
@@ -255,8 +256,12 @@ public sealed class ExecutionSystem : EntitySystem
                 Del(ammoUid);
                 break;
 
-            case HitscanPrototype hitscan:
-                damage = hitscan.Damage!;
+            case HitscanAmmoComponent hitscan:
+                if (TryComp<HitscanBasicDamageComponent>(ammoUid, out var hitscanB))
+                {
+                    damage = hitscanB.Damage;
+                }
+                Del(ammoUid);
                 break;
 
             default:

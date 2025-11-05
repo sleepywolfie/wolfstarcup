@@ -143,7 +143,7 @@ public sealed class InnerBodyAnomalySystem : SharedInnerBodyAnomalySystem
 
         // begin starcup: replace supercrit gib with definable damage type
         // _body.GibBody(ent, true, body, splatModifier: 5f);
-        _damageableSystem.TryChangeDamage(ent, ent.Comp.SupercriticalDamage, true);
+        _damageableSystem.ChangeDamage(ent.Owner, ent.Comp.SupercriticalDamage, true);
         // end starcup
     }
 
