@@ -316,7 +316,6 @@
     - BorgModulesStatic
     - BorgLimbsStatic
     - RoboticsStarcupStatic # starcup
-    - BorgModulesStaticImp # imp
     dynamicPacks:
     - Robotics
     - BorgModules
