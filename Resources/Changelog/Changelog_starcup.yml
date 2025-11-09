@@ -1781,3 +1781,13 @@
   id: 8270
   time: '2025-11-08T01:14:00.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/565
+- author: princesspengy
+  changes:
+  - message: a new map, crux station, has been added to the server and will be included
+      in our standard rotation! with thanks and endless love to axob, Cattail, foxcurl,
+      FluxTheFae, Space_Sentinel, little_meow_meow, Lilifolia, ScoutSucksAtSleeping,
+      sheepmera, and starcup as a whole. hope you enjoy!!
+    type: Add
+  id: 8271
+  time: '2025-11-09T05:37:46.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/555
