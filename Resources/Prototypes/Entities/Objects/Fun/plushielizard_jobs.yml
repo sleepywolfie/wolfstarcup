@@ -386,4 +386,7 @@
   description: An adorable stuffed toy that resembles an unathi as every job! It's a plushie of many talents. # starcup: rename lizardpeople to unathi, rewritten for tone
   components:
   - type: Sprite
+    # begin starcup: syndicate resprites
+    sprite: _starcup/Objects/Fun/plushielizard_jobs.rsi
     state: multiweh
+    # end starcup
