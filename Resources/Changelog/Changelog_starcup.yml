@@ -1897,3 +1897,13 @@
   id: 8283
   time: '2025-11-22T10:21:05.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/583
+- author: foxcurl
+  changes:
+  - message: Added six new topicals, printable from the medical fabricator. Each has
+      its own niche!
+    type: Add
+  - message: Gauze now costs half as much cloth to print at the medfab.
+    type: Tweak
+  id: 8284
+  time: '2025-11-22T11:09:52.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/571
