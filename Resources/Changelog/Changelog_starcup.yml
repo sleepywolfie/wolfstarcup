@@ -1959,3 +1959,11 @@
   id: 8290
   time: '2025-11-26T04:09:58.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/596
+- author: princesspengy
+  changes:
+  - message: felinids' reduced stamina threshold has been re-introduced pending further
+      discussion
+    type: Tweak
+  id: 8291
+  time: '2025-11-26T21:56:37.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/598
