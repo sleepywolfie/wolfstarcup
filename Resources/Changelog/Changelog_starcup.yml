@@ -2011,3 +2011,17 @@
   id: 8297
   time: '2025-12-01T19:31:32.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/608
+- author: princesspengy
+  changes:
+  - message: the energy shotgun should now spawn in the warden's locker as intended
+    type: Fix
+  id: 8298
+  time: '2025-12-03T04:36:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/610
+- author: foxcurl
+  changes:
+  - message: Prisoner wardrobes now contain prisoner headsets.
+    type: Tweak
+  id: 8299
+  time: '2025-12-03T04:50:47.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/613
